@@ -29,6 +29,64 @@ body {
   text-align: center;
 }
 
+
+.language-selector a img{
+  border: 20px;
+  border-radius: 50%;
+}
+
+.language-selector {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.language-dropdown {
+  display: none;
+  position: absolute;
+  top: 28px; /* Adjust this value to position the dropdown right below the current language icon */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Optional: Rounded corners */
+  gap: 10px;
+}
+
+.language-dropdown a {
+  gap: 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.language-dropdown a:hover {
+  background: rgba(0, 0, 0, 0.1); /* Slight background change on hover */
+}
+
+.language-selector:hover .language-dropdown {
+  display: block;
+}
+.language-wrapper:hover .language-dropdown {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.language-wrapper {
+  min-height: 84px;
+}
+
+
+.language-icon {
+  width: 26px;
+  height: 24px;
+}
+
+#current-language-icon {
+  border: 20px;
+  border-radius: 50%;
+}
+
 #titlelogo {
   width: clamp(60px, 15vw, 200px);
   height: auto;

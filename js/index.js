@@ -8,3 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'assets/ingles.pdf';
   });
 });
+
+function setLanguage(flag) {
+  // Change the displayed flag to the selected language's flag
+  document.getElementById('current-language-icon').src = 'assets/' + flag;
+}
