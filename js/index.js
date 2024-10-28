@@ -1,16 +1,16 @@
 function loadBr() {
-  // Load the 'about.html' page content (assuming AJAX or similar for dynamic loading)
-  window.location.href = 'br.html'; // Replace with actual page loading mechanism
+  // Open 'br.html' in a new tab
+  window.open('br.html', '_blank'); // Opens in a new tab
 }
 
 function loadEn() {
-  // Load the 'about.html' page content (assuming AJAX or similar for dynamic loading)
-  window.location.href = 'en.html'; // Replace with actual page loading mechanism
+  // Open 'en.html' in a new tab
+  window.open('en.html', '_blank'); // Opens in a new tab
 }
 
 function loadEs() {
-  // Load the 'about.html' page content (assuming AJAX or similar for dynamic loading)
-  window.location.href = 'es.html'; // Replace with actual page loading mechanism
+  // Open 'es.html' in a new tab
+  window.open('es.html', '_blank'); // Opens in a new tab
 }
 
 function setLanguage(flag) {
