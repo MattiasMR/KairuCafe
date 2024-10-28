@@ -59,6 +59,28 @@
       </div>
     </div>
   </div>
-<script src="js/index.js"></script>
+
+  <!-- Inline JavaScript for quick debugging -->
+  <script>
+    function loadBr() {
+      window.location.href = 'br.html';
+      history.pushState(null, null, "/sobre-nos");
+    }
+
+    function loadEn() {
+      window.location.href = 'en.html';
+      history.pushState(null, null, "/about-us");
+    }
+
+    function loadEs() {
+      window.location.href = 'es.html';
+      history.pushState(null, null, "/sobre-nosotros");
+    }
+
+    function setLanguage(flag) {
+      document.getElementById('current-language-icon').src = 'assets/' + flag;
+    }
+  </script>
+<script src="js\index.js"></script>
 </body>
 </html>
